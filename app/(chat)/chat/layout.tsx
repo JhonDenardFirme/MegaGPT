@@ -15,6 +15,7 @@ import {
   SidebarProvider,
   SidebarTrigger,
 } from "@/components/ui/sidebar"
+import { ChatInput } from "@/components/ChatInput";
 
 
 
@@ -47,9 +48,7 @@ export default function Layout({ children }: { children: ReactNode }) {
           </div>
         </header>
         <div className="flex flex-1 flex-col gap-4 px-4 py-10">
-          <div className="bg-red-500 w-full h-32"></div>
-          
-          <div className="bg-muted/50 mx-auto h-full w-full max-w-3xl rounded-xl" />
+          <ChatInput></ChatInput>
         </div>
       </SidebarInset>
     </SidebarProvider>
